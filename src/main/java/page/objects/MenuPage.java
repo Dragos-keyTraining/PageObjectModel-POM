@@ -17,6 +17,8 @@ public class MenuPage extends SeleniumWrappers{
 	public By loginLink = By.linkText("Login");
 	public By shopLink = By.linkText("BOOKS");
 	public By contactsLink = By.linkText("CONTACTS");
+	public By blogLink = By.linkText("BLOG");
+	public By aboutLink = By.linkText("ABOUT");
 	
 /*	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
