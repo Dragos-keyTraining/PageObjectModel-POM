@@ -92,4 +92,9 @@ public class SeleniumWrappers extends BaseTest{
 		action.scrollByAmount(x, 0).perform();
 	}
 	
+	
+	public WebElement getWebElement(By locator) {
+		return driver.findElement(locator);
+	}
+	
 }

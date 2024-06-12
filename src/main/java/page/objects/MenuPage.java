@@ -20,6 +20,9 @@ public class MenuPage extends SeleniumWrappers{
 	public By blogLink = By.linkText("BLOG");
 	public By aboutLink = By.linkText("ABOUT");
 	
+	public By iconSearch = By.cssSelector("div[class='top_panel_middle'] button[class*='icon-search']");
+	public By searchField = By.cssSelector("div[class='top_panel_middle'] input");
+	
 /*	public void navigateTo(By locator) {
 		driver.findElement(locator).click();
 	}*/
