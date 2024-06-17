@@ -16,7 +16,7 @@ public class LoginTest extends BaseTest{
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
 	
-	@Test(priority = 1)
+	@Test(priority = 1, groups = "UserManagementFunctionality")
 	public void validLoginTest() {
 		
 		MenuPage menuPage = new MenuPage(driver);		
@@ -32,7 +32,7 @@ public class LoginTest extends BaseTest{
 		
 	}
 	
-	@Test(priority = 2)
+	@Test(priority = 2, groups = "UserManagementFunctionality")
 	public void invalidLoginTest() {
 		
 		MenuPage menuPage = new MenuPage(driver);		
