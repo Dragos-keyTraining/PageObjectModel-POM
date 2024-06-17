@@ -147,10 +147,7 @@ public class JavascriptExecutorTest extends BaseTest{
 		MenuPage menu =  new MenuPage(driver);
 		
 		jse.executeScript(jsHover, menu.getWebElement(menu.blogLink));
-		jse.executeScript(jsHover, menu.getWebElement(menu.aboutLink));
-
-		
-		
+		jse.executeScript(jsHover, menu.getWebElement(menu.aboutLink));	
 		
 	}
 	

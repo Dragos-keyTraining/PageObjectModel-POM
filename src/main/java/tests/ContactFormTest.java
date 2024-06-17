@@ -16,7 +16,7 @@ public class ContactFormTest extends BaseTest {
 	String PASS = PropertiesFileProcessor.readPropertiesFile("pass", "credentials.properties");
 
 	
-	@Test
+	@Test(groups = "UserManagementFunctionality")
 	public void sendMessageTest() {
 		MenuPage menuPage = new MenuPage(driver);
 		menuPage.click(menuPage.loginLink);
