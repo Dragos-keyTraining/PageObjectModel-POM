@@ -13,6 +13,8 @@ public class MenuPage extends SeleniumWrappers{
 		this.driver = driver;
 	}
 	
+	//@FindBy
+	
 	//driver.findElement(By.linkText('Login'));
 	public By loginLink = By.linkText("Login");
 	public By shopLink = By.linkText("BOOKS");
@@ -27,6 +29,12 @@ public class MenuPage extends SeleniumWrappers{
 		driver.findElement(locator).click();
 	}*/
 	
+	public void search( String searchValue) {
+		
+		click(iconSearch);
+		sendKeys(searchField, searchValue);
+		click(iconSearch);
+	}
 	
 	
 }

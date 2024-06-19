@@ -33,7 +33,7 @@ public class ContactFormTest extends BaseTest {
 				"Can I join?");
 		
 		assertEquals(contactPage.getElementText(contactPage.sentMsg), 
-				"Thank you for your message. It has been sent.");
+				"Thank you for your message. It has been sent.x");
 	}
 	
 
