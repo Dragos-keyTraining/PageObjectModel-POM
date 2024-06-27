@@ -14,6 +14,7 @@ import org.testng.ITestResult;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import com.google.common.io.Files;
@@ -23,9 +24,15 @@ public class BaseTest {
 	public static WebDriver driver;
 	public JavascriptExecutor jse;
 
+/*	
+	@BeforeClass
+	public void deleteAllCookies() {
+		driver.manage().deleteAllCookies();
+	}
+	*/
 	
 	@Parameters({"appUrl"})
-	@BeforeClass(alwaysRun = true)
+	@BeforeMethod(alwaysRun = true)
 	public void setup(String url) {
 		
 		driver = new ChromeDriver();
@@ -36,7 +43,7 @@ public class BaseTest {
 		jse = (JavascriptExecutor) driver;
 	}
 	
-	@AfterClass(alwaysRun = true)
+	@AfterMethod(alwaysRun = true)
 	public void tearDown() throws InterruptedException  {
 		Thread.sleep(5000);//bad practice
 		driver.quit();

@@ -3,7 +3,7 @@
 	<parameter name = "appUrl" value="https://keybooks.ro" />
     <test name="test" >
         <classes>
-            <class name="tests.WindowHandleExample" ></class>  
+            <class name="tests.CookiesLogin" ></class>  
         </classes>
     </test>   
 </suite>
